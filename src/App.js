@@ -1,8 +1,22 @@
-import React from 'react';
+import React from "react";
 
 function App() {
-  const value = 'World';
-  return <div>Hello {value}</div>;
+
+  const openBackend = () => {
+    window.open("http://20.204.168.26 (lb-public-ip)", "_blank");
+  };
+
+  return (
+    <div style={{textAlign:"center", marginTop:"100px"}}>
+      <h1>Azure Cloud Architecture Project</h1>
+
+      <p>Frontend hosted on Azure Static Web Apps</p>
+
+      <button onClick={openBackend} style={{padding:"10px 20px"}}>
+        Open Backend Servers
+      </button>
+    </div>
+  );
 }
 
 export default App;
