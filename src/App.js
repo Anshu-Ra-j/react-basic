@@ -3,7 +3,7 @@ import React from "react";
 function App() {
 
   const openBackend = () => {
-    window.open("http://20.204.168.26 (lb-public-ip)", "_blank");
+    window.open("http://20.204.168.26", "_blank");
   };
 
   return (
